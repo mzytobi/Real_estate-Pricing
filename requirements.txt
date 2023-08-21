@@ -1,77 +1,69 @@
-lightgbm 3.3.5
-xgboost 1.7.5
-scikit-learn-intelex 2021.20220215.102710
-pip 23.1.2
-libclang 16.0.0
-ipython 8.2.0
-importlib-resources 5.12.0
-plotly 5.6.0
-spyder 5.1.5
-importlib-metadata 4.11.3
-gitdb 4.0.10
-matplotlib 3.7.1
-nltk 3.7
-tables 3.6.1
-Markdown 3.3.4
-jupyterlab 3.3.2
-GitPython 3.1.31
-intervaltree 3.1.0
-prompt-toolkit 3.0.20
-datasets 2.12.0
-jupyterlab-server 2.10.3
-numpy 1.25.1
-jupyter-server 1.13.5
-param 1.12.0
-py 1.11.0
-anaconda-client 1.9.0
-pkginfo 1.8.2
-conda-package-handling 1.8.1
-scipy 1.7.3
-tblib 1.7.0
-python-lsp-server 1.2.4
-mpmath 1.2.1
-joblib 1.2.0
-numpydoc 1.2
-skfeature-chappers 1.1.0
-conda-repo-cli 1.0.4
-scikit-learn 1.0.2
-streamlit-toggle-switch 1.0.2
-streamlit-vertical-slider 1.0.2
-jupyter 1.0.0
-jupyterlab-widgets 1.0.0
-python-lsp-black 1.0.0
-skfeature 1.0.0
-seaborn 0.11.2
-anaconda-project 0.10.2
-imbalanced-learn 0.10.1
-pickleshare 0.7.5
-typer 0.7.0
-intake 0.6.5
-pycosat 0.6.3
-jupyter-nbextensions-configurator 0.6.3
-conda-pack 0.6.0
-multipledispatch 0.6.0
-python-snappy 0.6.0
-nbclient 0.5.13
-datashape 0.5.4
-win-unicode-console 0.5
-pandas-flavor 0.5.0
-nbclassic 0.3.5
-conda-token 0.3.0
-itemadapter 0.3.0
-pyasn1-modules 0.2.8
-streamlit-extras 0.2.7
-ipython-genutils 0.2.0
-jupyter-highlight-selected-word 0.2.0
-streamlit-camera-input-live 0.2.0
-streamlit-keyup 0.2.0
-streamlit-image-coordinates 0.1.3
-jupyterlab-pygments 0.1.2
-matplotlib-inline 0.1.2
-streamlit-embedcode 0.1.2
-markdownlit 0.0.7
-streamlit-card 0.0.4
-python-version 0.0.2
-streamlit-faker 0.0.2
-sklearn 0.0.post5
-imblearn 0.0
+lightgbm==3.3.5
+xgboost==1.7.5
+pip==23.1.2
+libclang==16.0.0
+ipython==8.2.0
+importlib-resources==5.12.0
+plotly==5.6.0
+spyder==5.1.5
+importlib-metadata==4.11.3
+gitdb==4.0.10
+matplotlib==3.7.1
+nltk==3.7
+tables==3.6.1
+Markdown==3.3.4
+jupyterlab==3.3.2
+GitPython==3.1.31
+intervaltree==3.1.0
+prompt-toolkit==3.0.20
+datasets==2.12.0
+jupyterlab-server==2.10.3
+numpy==1.25.1
+jupyter-server==1.13.5
+param==1.12.0
+py==1.11.0
+anaconda-client==1.9.0
+pkginfo==1.8.2
+conda-package-handling==1.8.1
+scipy==1.7.3
+tblib==1.7.0
+python-lsp-server==1.2.4
+mpmath==1.2.1
+joblib==1.2.0
+numpydoc==1.2
+skfeature-chappers==1.1.0
+conda-repo-cli==1.0.4
+scikit-learn==1.0.2
+streamlit-toggle-switch==1.0.2
+streamlit-vertical-slider==1.0.2
+jupyter==1.0.0
+jupyterlab-widgets==1.0.0
+python-lsp-black==1.0.0
+skfeature==1.0.0
+seaborn==0.11.2
+anaconda-project==0.10.2
+imbalanced-learn==0.10.1
+pickleshare==0.7.5
+typer==0.7.0
+intake==0.6.5
+pycosat==0.6.3
+jupyter-nbextensions-configurator==0.6.3
+conda-pack==0.6.0
+multipledispatch==0.6.0
+python-snappy==0.6.0
+nbclient==0.5.13
+datashape==0.5.4
+win-unicode-console==0.5
+pandas-flavor==0.5.0
+nbclassic==0.3.5
+conda-token==0.3.0
+itemadapter==0.3.0
+pyasn1-modules==0.2.8
+matplotlib-inline==0.1.2
+streamlit-embedcode==0.1.2
+markdownlit==0.0.7
+streamlit-card==0.0.4
+python-version==0.0.2
+streamlit-faker==0.0.2
+sklearn==0.0.post5
+imblearn==0.0
