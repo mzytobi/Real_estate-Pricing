@@ -1,4 +1,4 @@
-lightgbm==3.3.5
+lightgbm==4.0.0
 xgboost==1.7.5
 pip==23.1.2
 libclang==16.0.0
