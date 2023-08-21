@@ -5,6 +5,7 @@ from PIL import Image
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import os
 import time
+import base64
 
 # Set the theme and layout
 st.set_page_config(
@@ -87,6 +88,12 @@ def main():
         # Display the prepared data
         st.subheader("Prepared Data:")
         st.write(prepared_data)
+        
+        # Add Filter Options
+        st.sidebar.subheader("Filter Options")
+        price_range_1M_to_2_5M = st.sidebar.checkbox("1M to 2.5M")
+        price_range_3M_to_5M = st.sidebar.checkbox("3M to 5M")
+
 
         # Perform model predictions
         if st.button('Predict'):
@@ -94,14 +101,31 @@ def main():
                 pred = model.predict(prepared_data)
                 results = pd.DataFrame({'ID': cust, "Price_Prediction": pred})
                 time.sleep(2)
-                st.subheader("Churn Predictions:")
+                st.subheader("Price Predictions:")
                 st.write(results)
+               # Display download button without clearing the displayed dataframe
+            st.markdown(get_download_link(results), unsafe_allow_html=True)
+                 # Filter IDs based on selected price ranges
+            if price_range_1M_to_2_5M:
+                filtered_ids_1M_to_2_5M = results.loc[(results['Price_Prediction'] >= 1000000) & (results['Price_Prediction'] <= 2500000), 'ID'].tolist()
+                st.subheader("IDs with Price between 1M and 2.5M:")
+                st.write(filtered_ids_1M_to_2_5M)
+
+            if price_range_3M_to_5M:
+                filtered_ids_3M_to_5M = results.loc[(results['Price_Prediction'] >= 3000000) & (results['Price_Prediction'] <= 5000000), 'ID'].tolist()
+                st.subheader("IDs with Price between 3M and 5M:")
+                st.write(filtered_ids_3M_to_5M)
 
             # Provide download buttons for prediction results
                 csv1 = results.to_csv(index=False)
                 st.download_button('Download Predictions', csv1, file_name='Price_predictions.csv')
                  # Show "Task completed successfully!" after the prediction is completed
             st.success("Price Prediction completed successfully!")
+def get_download_link(df):
+    csv = df.to_csv(index=False)
+    b64 = base64.b64encode(csv.encode()).decode()
+    href = f'<a href="data:file/csv;base64,{b64}" download="predicted_new_values.csv">Download Predicted Values</a>'
+    return href
 
 if __name__ == "__main__":
     main()
